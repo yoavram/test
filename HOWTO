@@ -16,3 +16,8 @@ git config -e
 [remote “origin”]
 url = git@github.com:username/reponame.git
 url = <remote link for bitbucket>
+
+
+OR
+
+git config --add remote.origin.url git@gitlab.com:yoavram/test.git
