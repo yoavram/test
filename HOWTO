@@ -1,0 +1,18 @@
+https://medium.com/@karan/the-7-rules-for-writing-software-that-wont-die-when-you-do-38ef0a925650
+
+# rename origin remote
+git remote rename origin github
+ 
+# add the gitlab remote (for the love of everything that’s holy, use ssh)
+git remote add bitbucket <remote link for bitbucket>
+ 
+# push existing code to new remote
+git push -u bitbucket —all
+ 
+# let’s magic
+git config -e
+ 
+# add this in the file
+[remote “origin”]
+url = git@github.com:username/reponame.git
+url = <remote link for bitbucket>
